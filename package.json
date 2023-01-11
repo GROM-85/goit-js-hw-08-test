@@ -2,7 +2,7 @@
   "name": "goit-js-hw-08",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://grom85.github.io/goit-js-hw-08",
+  "homepage": "https://grom-85.github.io/goit-js-hw-08",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url /goit-js-hw-08"
