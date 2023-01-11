@@ -3,24 +3,30 @@ import { throttle } from "lodash";
 const form = document.querySelector(".feedback-form");
 const FORM_STATE_KEY = "feedback-form-state";
 const {elements:{email,message}} = form;// for update values
-const formData = {};
+
 
 
 
 
 const saveMessageHandler = (event) =>{
-    formData[event.target.name] = event.target.value;
-    localStorage.setItem(FORM_STATE_KEY,JSON.stringify(formData));
+
+    let retrivedData = localStorage.getItem(FORM_STATE_KEY);
+    retrivedData = JSON.parse(retrivedData) || {};
+    retrivedData[event.target.name] = event.target.value;
+
+    console.log(retrivedData);
+    
+    localStorage.setItem(FORM_STATE_KEY,JSON.stringify(retrivedData));
    
 }
 
 function updateInput(){
     try{
         const serializedInputs = localStorage.getItem(FORM_STATE_KEY);
-        const parsedInputs = JSON.parse(serializedInputs);
-        console.log(parsedInputs);// return object
-        email.value = parsedInputs.email;
-        message.value = parsedInputs.message;
+        const retrivedData = JSON.parse(serializedInputs);
+        console.log(retrivedData);// return object
+        email.value = retrivedData.email || "";
+        message.value = retrivedData.message || "";
     }
     catch(error){
         console.log("Get error state",error.message);
@@ -30,7 +36,7 @@ function updateInput(){
 function formSubmitHandler(event){
     event.preventDefault();
     
-    console.log(formData);
+    console.log(JSON.parse(localStorage.getItem(FORM_STATE_KEY)));
     localStorage.removeItem(FORM_STATE_KEY);
     event.currentTarget.reset();
 }
