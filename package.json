@@ -1,0 +1,31 @@
+{
+  "name": "goit-js-hw-08",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://grom85.github.io/goit-js-hw-08",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /goit-js-hw-08"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GROM-85/goit-js-hw-08.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GROM-85/goit-js-hw-08/issues"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "@vimeo/player": "^2.18.0",
+    "lodash": "^4.17.21",
+    "modern-normalize": "^1.1.0",
+    "simplelightbox": "^2.11.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
