@@ -4,8 +4,8 @@
   "description": "",
   "homepage": "https://grom-85.github.io/goit-js-hw-08",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /goit-js-hw-08"
+    "start": "parcel src/*index.html",
+    "build": "parcel build src/*index.html --public-url /goit-js-hw-08"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@vimeo/player": "^2.18.0",
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21",
     "modern-normalize": "^1.1.0",
     "simplelightbox": "^2.11.0"
