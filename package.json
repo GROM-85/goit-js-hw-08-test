@@ -2,21 +2,21 @@
   "name": "goit-js-hw-08",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://grom-85.github.io/goit-js-hw-08",
+  "homepage": "https://grom-85.github.io/goit-js-hw-08-test",
   "scripts": {
     "start": "parcel src/*index.html",
-    "build": "parcel build src/*index.html --public-url /goit-js-hw-08",
-    "deploy": "rm -rf /dist && npm run build && gh-pages -d dist"
+    "build": "parcel build src/*index.html --public-url /goit-js-hw-08-test"
+    
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GROM-85/goit-js-hw-08.git"
+    "url": "git+https://github.com/GROM-85/goit-js-hw-08-test.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GROM-85/goit-js-hw-08/issues"
+    "url": "https://github.com/GROM-85/goit-js-hw-08-test/issues"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
